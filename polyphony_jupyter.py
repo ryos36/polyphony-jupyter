@@ -82,7 +82,7 @@ def show_testbench():
     for scope in scopes:
         if scope.is_testbench() :
             scope_name = scope.qualified_name()
-            print("############### {}.py #################".format(scope_name))
+            print("/**************** {}.v ****************/".format(scope_name))
             print(the_compile_result.map[scope_name])
 
 #----------------------------------------------------------------
@@ -91,7 +91,7 @@ def show_module():
     for scope in scopes:
         if not scope.is_testbench() :
             scope_name = scope.qualified_name()
-            print("############### {}.py #################".format(scope_name))
+            print("/**************** {}.v ****************/".format(scope_name))
             print(the_compile_result.map[scope_name])
 
 #----------------------------------------------------------------
